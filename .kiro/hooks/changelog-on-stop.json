@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Append Changelog Entry",
+      "trigger": "Stop",
+      "description": "After every session that makes changes, appends a timestamped summary to changelog.txt in the workspace root.",
+      "action": {
+        "type": "agent",
+        "prompt": "Before finishing, append a new entry to the file `changelog.txt` in the workspace root. The entry should be on its own line(s) with the format:\n\n[YYYY-MM-DD HH:MM] - <short summary of what was changed>\n\nUse the current date and time. Summarize the changes made during this session in one or two sentences. If `changelog.txt` does not exist yet, create it. Always append — never overwrite previous entries."
+      }
+    }
+  ]
+}

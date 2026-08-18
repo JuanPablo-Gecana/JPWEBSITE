@@ -1,0 +1,8 @@
+[2026-08-08 00:00] - Created steering rules (product.md, tech.md, structure.md) and updated product.md to note that each technology in the marquee has an associated logo image in assets/.
+[2026-08-11 08:37] - Changed header and body fonts, changed the navbar to icons, fixed the mail logo on contacts section, switched the about and technologies section and changed the hero section.
+[2026-08-11 08:37] - No additional changes made in this session; previous changelog entry already recorded.
+[2026-08-14 00:00] - Created .kiro/steering/design.md — a steering document covering design rules (color palette, typography, spacing, border radius, transitions, buttons, icons, images, responsive breakpoints, and general principles) extracted from the current style.css.
+[2026-08-08 00:01] - Made Technologies section static (removed marquee animation and duplicate items). Replaced .tech-marquee-wrapper with .tech-grid using flex layout aligned left. Left-aligned the Technologies, About, and Projects section headings. Removed @keyframes scroll-left.
+[2026-08-14 00:02] - Made Technologies section static and left-aligned (removed marquee scrolling animation, removed duplicate tech items, replaced with a static flex grid). Left-aligned the About, Technologies, and Projects section headings with matching max-width constraints.
+[2026-08-14 00:03] - Left-aligned the Contact section (heading, info row, and social icons). Changed contact container max-width from 900px to 1100px to match other sections. Removed a stray .section-heading margin-left rule.
+[2026-08-08 00:04] - Left-aligned the Contact section content (info row, social icons) and updated its container max-width to 1100px to match the About and Projects sections for consistent alignment across the page.
