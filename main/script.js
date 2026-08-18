@@ -1,15 +1,15 @@
 // ===== TYPEWRITER EFFECT =====
 const typewriterElement = document.getElementById('typewriter-text');
 const words = [
-  "building",
-  "innovating",
-  "deploying"
+  "BUILDING",
+  "INNOVATING",
+  "DEPLOYING"
 ];
 
 let taglineIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-let typingSpeed = 30;
+let typingSpeed = 80;
 
 function typewrite() {
   const currentWords = words[taglineIndex];
