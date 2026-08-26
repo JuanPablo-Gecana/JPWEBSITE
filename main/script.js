@@ -2,7 +2,6 @@
 const typewriterElement = document.getElementById('typewriter-text');
 const words = [
   "BUILDING",
-  "INNOVATING",
   "DEPLOYING"
 ];
 
