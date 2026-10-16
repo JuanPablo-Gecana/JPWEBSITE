@@ -1,9 +1,0 @@
-TASK TO DO - FRONT END
-- Adjust Download CV Position
-- Intergrate it with Frameworks (Tailwind CSS, React)
-- Make it Personalized
-- Make it Actually Download a CV
-- Make the projects section a carousel
-- Improve the technologies section
-- Expand the About section
-- Use actually decent pictures
