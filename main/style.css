@@ -358,20 +358,23 @@ img {
 }
 
 .about-container {
+  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: minmax(0, 400px) minmax(0, 1fr);
+  align-items: stretch;
   gap: 60px;
 }
 
 .about-image-wrapper {
-  flex: 1;
+  width: 100%;
+  min-width: 0;
 }
 
 .about-image-placeholder {
   width: 100%;
-  max-width: 400px;
+  max-width: none;
   aspect-ratio: 4 / 5;
   border-radius: 12px;
   overflow: hidden;
@@ -385,7 +388,19 @@ img {
 }
 
 .about-text {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content {
   flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-text p {
@@ -416,11 +431,11 @@ img {
   gap: 60px;
 }
 
-.affiliations-column {
+.affiliations-column, .cert-column{
   flex: 1;
 }
 
-.affiliations-content {
+.affiliations-content, .cert-content {
   margin-top: 20px;
   background: rgba(20, 20, 20, 0.55);
   backdrop-filter: blur(8px);
@@ -435,7 +450,7 @@ img {
   font-size: 1rem;
 }
 
-.affiliations-column .section-heading {
+.affiliations-column .section-heading .cert-column{
   text-align: left;
   margin-bottom: 0;
 }
@@ -708,8 +723,10 @@ img {
   }
 
   .about-container {
-    flex-direction: column;
+    max-width: 400px;
+    grid-template-columns: minmax(0, 1fr);
     text-align: center;
+    gap: 40px;
   }
 
   .affiliations-container {
@@ -723,8 +740,12 @@ img {
   }
 
   .about-image-placeholder {
-    max-width: 300px;
+    max-width: none;
     margin: 0 auto;
+  }
+
+  .about-content {
+    min-height: 260px;
   }
 
   .tech-grid {
@@ -911,4 +932,29 @@ img {
 .contact-item span,
 .social-name {
   overflow-wrap: anywhere;
+}
+
+/* ===== CONSISTENT POST-HERO SECTION SPACING ===== */
+:root {
+  --section-edge-space: 30px;
+}
+
+/* Preserve About's current top spacing from the Hero; only normalize its bottom edge. */
+body > .about-section {
+  padding-bottom: var(--section-edge-space);
+}
+
+body > .experiences-section,
+body > .affiliations-section,
+body > .projects-section,
+body > .contact-section {
+  padding-top: var(--section-edge-space);
+  padding-bottom: var(--section-edge-space);
+}
+
+/* Tech Stack originally used a unique 50px top margin and no vertical padding. */
+body > .tech-section {
+  margin-top: 0;
+  padding-top: var(--section-edge-space);
+  padding-bottom: var(--section-edge-space);
 }

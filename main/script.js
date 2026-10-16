@@ -45,24 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
   typewrite();
 });
 
-// ===== BACK TO TOP BUTTON =====
-const backToTopBtn = document.getElementById('back-to-top');
-
-window.addEventListener('scroll', function () {
-  if (window.scrollY > 400) {
-    backToTopBtn.classList.add('visible');
-  } else {
-    backToTopBtn.classList.remove('visible');
-  }
-});
-
-backToTopBtn.addEventListener('click', function () {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
-
 // ===== MOBILE NAV TOGGLE =====
 const navToggle = document.querySelector('.nav-toggle');
 const navbar = document.querySelector('.navbar');
