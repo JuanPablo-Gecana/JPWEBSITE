@@ -456,7 +456,7 @@ img {
 }
 
 
-.cert-header {
+.cert-content {
   display: flex;
   flex-direction: row;
   align-items: center;
