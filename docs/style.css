@@ -455,6 +455,34 @@ img {
   margin-bottom: 0;
 }
 
+
+.cert-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.cert-image {
+  width: 20%;
+  flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cert-title {
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+}
+
+.cert-divider {
+  border: none;
+  border-top: 1px solid var(--white);
+  margin: 20px 0;
+  opacity: 0.5;
+}
+
 /* ===== PROJECTS SECTION ===== */
 .projects-section {
   padding: 60px 30px;
