@@ -470,17 +470,31 @@ img {
   object-fit: cover;
 }
 
+.cert-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+
 .cert-title {
   color: var(--white);
   font-family: var(--font-heading);
   font-size: 1.2rem;
+  margin: 0 0 4px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.cert-divider {
-  border: none;
-  border-top: 1px solid var(--white);
-  margin: 20px 0;
-  opacity: 0.5;
+.cert-subtext {
+  color: #6a6a6a;
+  font-size: 0.85rem;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ===== PROJECTS SECTION ===== */
